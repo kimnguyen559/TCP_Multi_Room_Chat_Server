@@ -1,57 +1,43 @@
-# SimpleToDo
-# Pre-work - *Name of App Here*
+# TCP_Multi_Room_Chat_Server
 
-**Name of your app** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
+This project implements a multiple-room chat Server that allows users to sign in a chosen room and exchange conversation with other users through instant messages.
 
-Submitted by: **Your Name Here**
-
-Time spent: **X** hours spent in total
+By: Kim Nguyen - kimnguyen559@gmail.com
 
 ## User Stories
 
-The following **required** functionality is completed:
+The following functionality is completed:
 
-* [ ] User can **successfully add and remove items** from the todo list
-* [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list.
-* [ ] User can **persist todo items** and retrieve them properly on app restart
+* User can connect to the Server through a TCP connection
+* User can sign in and join one of two chat rooms, named “chat” and “hottub”
+* User can send instant messages to all users in the same chat room
+* User can quit the current chat room to join another one
+* User can exit and close the connection
 
-The following **optional** features are implemented:
+The following features are implemented:
 
-* [ ] Persist the todo items [into SQLite](http://guides.codepath.com/android/Persisting-Data-to-the-Device#sqlite) instead of a text file
-* [ ] Improve style of the todo items in the list [using a custom adapter](http://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView)
-* [ ] Add support for completion due dates for todo items (and display within listview item)
-* [ ] Use a [DialogFragment](http://guides.codepath.com/android/Using-DialogFragment) instead of new Activity for editing items
-* [ ] Add support for selecting the priority of each todo item (and display in listview item)
-* [ ] Tweak the style improving the UI / UX, play with colors, images or backgrounds
+* Establish the connection between Server and Client using Java Sorcket API
+* Allow Server to serve multiple Client at the same time with Java Thread API
+* Validate user name to make sure there is no duplicate
+* Verify a user has been signed in before entering a chat room
+* Announce a newcomer to existing users in the chat room
+* Announce the departure of a user to other users
+* Send appropriate error messages for bad commands
 
-The following **additional** features are implemented:
+The following API is implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* /rooms						: get list of chat rooms
+* /join roomName				: join chat room 
+* /leave						: leave chat room
+* /quit						    : exit the system
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[Video Walkthrough](https://giphy.com/gifs/3oz8xsl53QFq1dJRVm?status=200/)
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-## Notes
 
-Describe any challenges encountered while building the app.
 
-## License
 
-    Copyright [yyyy] [name of copyright owner]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
