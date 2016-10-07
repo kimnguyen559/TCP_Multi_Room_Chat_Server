@@ -35,7 +35,7 @@ The following API is implemented:
 
 Here's a walkthrough of implemented user stories:
 
-[Video Walkthrough](https://giphy.com/gifs/26ueZZhkH815PQhzi/)
+[Video Walkthrough](https://giphy.com/gifs/l2SpXUjpklyXLmj7y?status=200/)
 
 
 
