@@ -1,8 +1,6 @@
-# TCP_Multi_Room_Chat_Server
+## TCP_Multi_Room_Chat_Server
 
 This project implements a multiple-room chat Server that allows users to sign in a chosen room and exchange conversation with other users through instant messages.
-
-By: Kim Nguyen - kimnguyen559@gmail.com
 
 ## User Stories
 
