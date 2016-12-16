@@ -3,15 +3,15 @@ This project implements a multiple-room chat Server that allows users to sign in
 
 ## User Stories
 #### The following functionality is completed:
-* User can connect to the Server through a TCP connection
+* User can connect to the Server through a *TCP* connection
 * User can sign in and join one of two chat rooms, named “chat” and “hottub”
 * User can send instant messages to all users in the same chat room
 * User can quit the current chat room to join another one
 * User can exit and close the connection
 
 #### The following features are implemented:
-* Establish the connection between Server and Client using Java Sorcket API
-* Allow Server to serve multiple Client at the same time with Java Thread API
+* Establish the connection between Server and Client using *Java Sorcket* API
+* Allow Server to serve multiple Client at the same time with *Java Thread* API
 * Validate user name to make sure there is no duplicate
 * Verify a user has been signed in before entering a chat room
 * Announce a newcomer to existing users in the chat room
